@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@hgraph.io/sdk": "0.0.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.15",
+    "esbuild-plugin-copy": "^2.1.1"
+  },
+  "scripts": {
+    "watch": "node watch.mjs"
+  }
+}
