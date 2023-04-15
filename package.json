@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@hgraph.io/sdk": "0.0.4"
+    "@hgraph.io/sdk": "0.0.5"
   },
   "devDependencies": {
     "esbuild": "^0.17.15",
