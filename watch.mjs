@@ -81,6 +81,6 @@ http
     // Forward the body of the request to esbuild dev server
     request.pipe(esbuildServerRequest, {end: true})
   })
-  .listen(3000)
+  .listen(3001)
 
-console.log(`Dev Server listening on http://${host}:3000`)
+console.log(`Dev Server listening on http://${host}:3001`)
