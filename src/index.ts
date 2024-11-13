@@ -24,7 +24,7 @@ async function main() {
   const json = await client.query(LatestTransaction)
 
   appendToDocument(json)
-  const unsubscribe = client.subscribe(LatestTransactionSubscription, {
+  const subscription = client.subscribe(LatestTransactionSubscription, {
     // handle the data
     next: (data) => {
       appendToDocument(data)
@@ -40,7 +40,7 @@ async function main() {
   })
 
   // clear subscription
-  setTimeout(unsubscribe, 10000)
+  setTimeout(subscription.unsubscribe, 10000)
 }
 
 main()
