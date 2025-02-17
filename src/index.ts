@@ -1,6 +1,19 @@
 import Client from '@hgraph.io/sdk'
 
-const client = new Client()
+// Authenticate with an API key or a token
+
+// Replace with your API key
+const client = new Client({
+  headers: {
+    'x-api-key': '<your-api-key>',
+  },
+})
+
+// Replace with your token
+// const client = new Client({
+//   token: '<your-token>',
+// })
+
 const container = document.getElementById('root')
 
 function appendToDocument(data) {
